@@ -1,4 +1,5 @@
 // Função para calcular as raízes da equação quadrática
+
 function calcularRaizes(a, b, c) {
     // Fórmula de Bhaskara
     const delta = b ** 2 - 4 * a * c;
