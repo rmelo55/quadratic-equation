@@ -34,8 +34,3 @@ function calcularRaizes(a, b, c) {
     document.getElementById("mensagem").innerHTML = "A equação possui duas raízes complexas.";
   }
   
-  // Abrir nova tela com o gráfico
-  const grafico = document.createElement("img");
-  grafico.src = "grafico.png";
-  document.getElementById("grafico").appendChild(grafico);
-  

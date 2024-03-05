@@ -1,14 +1,16 @@
 body {
+    margin: 0;
     background-color: #770000;
-    background-image: linear-gradient(to bottom, #770000 0%, #ffffff 100%);
+    background-image: radial-gradient( #aec1ff 0%, #ffcece 100%);
     font-family: sans-serif;
+    height: 100vh;
 }
 
 #calculadora {
     width: 500px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #000;
     border-radius: 10px;
 }
 
