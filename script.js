@@ -1,6 +1,7 @@
 const form = document.querySelector('form');
 const result = document.querySelector('.result');
 const roots = document.querySelector('.roots');
+const resultRoots = document.querySelector('.result-roots');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -16,8 +17,9 @@ form.addEventListener('submit', (e) => {
         const x2 = (-b - Math.sqrt(delta)) / (2 * a);
         result.innerHTML = 'Existem duas raízes reais e distintas.';
         roots.innerHTML = `x<sub>1</sub> = ${x1}, x<sub>2</sub> = ${x2}`;
-        result.classList.add('twoRoots');
         roots.classList.add('roots-border');
+        result.classList.add('twoRoots');
+        resultRoots.classList.add('result-roots');
     } else if (delta === 0) {   
         result.innerHTML = 'Existe apenas uma raiz real.';
         const x = -b / (2 * a);

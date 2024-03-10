@@ -1,10 +1,11 @@
 body {
+    background: linear-gradient(to right, #ddbc02, #7d00a3);
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
     max-width: 500px;
     margin: auto;
-    background: linear-gradient(to right, #b4afdf, #d7c3dd);
+    color: #fff;
 }
 
 .no-break {
@@ -18,10 +19,12 @@ h2 {
     margin-bottom: 20px;
 }
 
-.borderForm{
+.container{
+    background-color: silver;
     border: 1px solid #000;
     border-radius: 10px;
     padding: 30px;
+    color: #000;
 }
 
 .coeficients{
@@ -64,19 +67,21 @@ button {
 }
 
 .result-roots{
+    background-color: silver;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    border-radius: 10px;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 50px;
+    color: #000;
 }
 
 .roots,
 .result {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0;
     font-size: 25px;
     font-style: italic;
     font-weight: bolder;
@@ -84,15 +89,17 @@ button {
     padding: 20px;
 }
 
-.roots-border{
+/* .roots-border{
+    color: #000;
     border: 1px solid #000;
     border-radius: 10px;
     margin-top: 0;
-}
+} */
 
 .twoRoots,
 .oneRoot,
 .noRoots{
+    /* background-color: silver; */
     color:#FF0000;
     font-family: 'Times New Roman', Times, serif;
 }
