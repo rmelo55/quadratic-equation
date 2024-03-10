@@ -1,7 +1,9 @@
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 600px;
+    margin: auto;
     background: linear-gradient(to right, #b4afdf, #d7c3dd);
 }
 
@@ -22,11 +24,12 @@ h2 {
     padding: 30px;
 }
 
-.coeficient{
+.coeficients{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 form {
@@ -59,14 +62,31 @@ button {
     border-radius: 6px;
 }
 
+.result-roots{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
 .roots,
 .result {
     text-align: center;
-    margin: 30px;
+    margin-top: 20px;
     font-size: 25px;
     font-style: italic;
     font-weight: bolder;
     font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+
+.roots-border{
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-top: 0;
 }
 
 .twoRoots,
@@ -74,6 +94,4 @@ button {
 .noRoots{
     color:#FF0000;
     font-family: 'Times New Roman', Times, serif;
-    padding: 10px;
-    border-radius: 10px;
 }
