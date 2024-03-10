@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
-    max-width: 600px;
+    max-width: 500px;
     margin: auto;
     background: linear-gradient(to right, #b4afdf, #d7c3dd);
 }
@@ -60,6 +60,7 @@ button {
     color: white;
     border: none;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .result-roots{
