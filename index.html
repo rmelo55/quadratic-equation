@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,3 +30,41 @@
 
 </body>
 </html>
+=======
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Equação Quadrática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculadora">
+        <h1>Calcular Equação do 2º Grau</h1>
+        <form id="formulario" onsubmit="calcularEquacao(); return false;">
+            <label for="a">Coeficiente a:</label>
+            <input type="number" id="a" name="a" required>
+
+            <label for="b">Coeficiente b:</label>
+            <input type="number" id="b" name="b" required>
+
+            <label for="c">Coeficiente c:</label>
+            <input type="number" id="c" name="c" required>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="resultado">
+            <h2>Resultado</h2>
+            <p>x1 = <span id="x1"></span></p>
+            <p>x2 = <span id="x2"></span></p>
+        </div>
+        
+        <div id="mensagem">
+            <p></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 0895ea21f5e98df5d222077eeebf1ca2af57e77d
