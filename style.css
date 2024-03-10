@@ -1,5 +1,4 @@
 body {
-<<<<<<< HEAD
     font-family: Arial, sans-serif;
     max-width: 800px;
     margin: 0 auto;
@@ -17,15 +16,18 @@ h2 {
     margin-top: 50px;
     margin-bottom: 10px;
 }
+
 h2{
     margin-top: 20;
 }
+
 .coeficient{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: bold;
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -53,54 +55,9 @@ button {
     background-color: #4CAF50;
     color: white;
     border: none;
-=======
-    margin: 0;
-    background-color: #770000;
-    background-image: radial-gradient( #aec1ff 0%, #ffcece 100%);
-    font-family: sans-serif;
-    height: 100vh;
+    border-radius: 6px;
 }
 
-#calculadora {
-    width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #000;
-    border-radius: 10px;
-}
-
-#calculadora h1 {
-    text-align: center;
-}
-
-#formulario {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-
-#formulario label {
-    margin-bottom: 5px;
-}
-
-#formulario input {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    height: 25px;
-    width: 200px;
-}
-
-#formulario button {
-    margin-top: 10px;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
->>>>>>> 0895ea21f5e98df5d222077eeebf1ca2af57e77d
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-<<<<<<< HEAD
 .roots,
 .result {
     text-align: center;
@@ -110,6 +67,7 @@ button {
     font-weight: bolder;
     font-family: 'Times New Roman', Times, serif;
 }
+
 .twoRoots,
 .oneRoot,
 .noRoots{
@@ -119,32 +77,3 @@ button {
     border: 1px solid rgb(70, 70, 70);
     border-radius: 10px;
 }
-=======
-#resultado {
-    margin-top: 20px;
-}
-
-#resultado h2 {
-    text-align: center;
-}
-
-#resultado p {
-    margin-bottom: 10px;
-}
-
-#mensagem {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#grafico {
-    margin-top: 20px;
-    text-align: center;
-}
-
-#grafico img {
-    width: 400px;
-}
->>>>>>> 0895ea21f5e98df5d222077eeebf1ca2af57e77d
