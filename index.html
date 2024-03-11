@@ -13,7 +13,7 @@
 
         <h2>Digite os coeficientes da equação:</h2>
 
-        <form>
+        <form onsubmit="validateForm()">
             <label for="a"><span class="coeficients">a</span></label>
             <input type="text" id="a" name="a" placeholder="Coeficiente a" autofocus onkeydown="goToNext(event, 'b')">
 

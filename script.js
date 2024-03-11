@@ -22,21 +22,27 @@ form.addEventListener('submit', (e) => {
 
         result.innerHTML = 'Existem duas raízes reais e distintas.';
         roots.innerHTML = `x<sub>1</sub> = ${x1}, x<sub>2</sub> = ${x2}`;
-        vertices.innerHTML = `O discriminante (o nosso &Delta;) é: ${delta} <br>O vértice da parábola está na coordenada: <bolder>(${vx},${vy})</bolder`;
-        roots.classList.add('roots-border');
-        result.classList.add('result2');
+        vertices.innerHTML = `O discriminante &Delta; é: ${delta} <br>A coordenada do vértice da parábola é: <bolder>(${vx},${vy})</bolder`;
         resultRoots.classList.add('result-roots2');
+        result.classList.add('result2');
         vertices.classList.add('vertices2');
+        // roots.classList.add('roots-border');
     } else if (delta === 0) {   
-        result.innerHTML = 'Existe apenas uma raiz real.';
         const x = -b / (2 * a);
+
+        result.innerHTML = 'Existe apenas uma raiz real.';
         roots.innerHTML = `x = ${x}`;
-        result.classList.add('oneRoot');
-        roots.classList.add('roots-border');
+        vertices.innerHTML = `O discriminante (o nosso &Delta;) é: ${delta} <br>A coordenada do vértice da parábola é: <bolder>(${vx},${vy})</bolder`;
+        resultRoots.classList.add('result-roots2')
+        result.classList.add('result2');
+        vertices.classList.add('vertices2');
     } else {
+        vertices.style.display = "none";
         result.classList.add('noRoots');
         result.innerHTML = 'Não existem raízes reais.';
         roots.innerHTML = '';
+        resultRoots.classList.add('result-roots2')
+        result.classList.add('result2');
     }
 });
 
@@ -46,4 +52,17 @@ function goToNext(event, nextFieldID) {
         var nextField = document.getElementById(nextFieldID);
         nextField && nextField.focus();
     }
+}
+
+function validateForm(){
+    const valueA = document.getElementById( 'a' ).value
+    const valueB = document.getElementById( 'b' ).value
+    const valueC = document.getElementById( 'c' ).value
+
+    if (valueA === '' || valueB === '' || valueC === ''){
+        window.alert("Digite os coeficientes A, B e C!")
+        return false
+}else{
+    return true
+}
 }
