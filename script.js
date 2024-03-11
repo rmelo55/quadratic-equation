@@ -27,6 +27,7 @@ form.addEventListener('submit', (e) => {
         result.classList.add('result2');
         vertices.classList.add('vertices2');
         // roots.classList.add('roots-border');
+
     } else if (delta === 0) {   
         const x = -b / (2 * a);
 
@@ -36,9 +37,10 @@ form.addEventListener('submit', (e) => {
         resultRoots.classList.add('result-roots2')
         result.classList.add('result2');
         vertices.classList.add('vertices2');
+
     } else {
         vertices.style.display = "none";
-        result.classList.add('noRoots');
+        // result.classList.add('noRoots');
         result.innerHTML = 'Não existem raízes reais.';
         roots.innerHTML = '';
         resultRoots.classList.add('result-roots2')
