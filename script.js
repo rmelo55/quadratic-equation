@@ -22,7 +22,7 @@ form.addEventListener('submit', (e) => {
 
         result.innerHTML = 'Existem duas raízes reais e distintas.';
         roots.innerHTML = `x<sub>1</sub> = ${x1}, x<sub>2</sub> = ${x2}`;
-        vertices.innerHTML = `O discriminante (&Delta;) é: ${delta} <br>O vértice da parábola está na coordenada: <bolder>(${vx},${vy})</bolder`;
+        vertices.innerHTML = `O discriminante (o nosso &Delta;) é: ${delta} <br>O vértice da parábola está na coordenada: <bolder>(${vx},${vy})</bolder`;
         roots.classList.add('roots-border');
         result.classList.add('result2');
         resultRoots.classList.add('result-roots2');
@@ -39,3 +39,11 @@ form.addEventListener('submit', (e) => {
         roots.innerHTML = '';
     }
 });
+
+function goToNext(event, nextFieldID) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        var nextField = document.getElementById(nextFieldID);
+        nextField && nextField.focus();
+    }
+}

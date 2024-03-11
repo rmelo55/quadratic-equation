@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(to right, #ddbc02, #7d00a3);
+    /* background: linear-gradient(to right, #ddbc02, #7d00a3); */
+    background-image: url('bg1.jpg');
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;

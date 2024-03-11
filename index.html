@@ -15,10 +15,10 @@
 
         <form>
             <label for="a"><span class="coeficients">a</span></label>
-            <input type="text" id="a" name="a" placeholder="Coeficiente a">
+            <input type="text" id="a" name="a" placeholder="Coeficiente a" autofocus onkeydown="goToNext(event, 'b')">
 
             <label for="b"><span class="coeficients">b</span></label>
-            <input type="text" id="b" name="b" placeholder="Coeficiente b">
+            <input type="text" id="b" name="b" placeholder="Coeficiente b" onkeydown="goToNext(event, 'c')">
 
             <label for="c"><span class="coeficients">c</span></label>
             <input type="text" id="c" name="c" placeholder="Coeficiente c">
