@@ -83,7 +83,7 @@ button {
     color: #000;
 }
 
-.roots,
+/* .roots, */
 .result2 {
     text-align: center;
     margin-top: 0;
@@ -105,13 +105,12 @@ button {
     margin-top: 0;
 } */
 
-.twoRoots,
+/* .twoRoots,
 .oneRoot,
 .noRoots{
-    /* background-color: silver; */
     color:#FF0000;
     font-family: 'Times New Roman', Times, serif;
-}
+} */
 
 .vertices2{
     height: auto;

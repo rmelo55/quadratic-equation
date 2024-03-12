@@ -26,25 +26,26 @@ form.addEventListener('submit', (e) => {
         resultRoots.classList.add('result-roots2');
         result.classList.add('result2');
         vertices.classList.add('vertices2');
-        // roots.classList.add('roots-border');
+        roots.innerHTML = '';
 
     } else if (delta === 0) {   
         const x = -b / (2 * a);
-
+        
         result.innerHTML = 'Existe apenas uma raiz real.';
         roots.innerHTML = `x = ${x}`;
         vertices.innerHTML = `O discriminante (o nosso &Delta;) é: ${delta} <br>A coordenada do vértice da parábola é: <bolder>(${vx},${vy})</bolder`;
-        resultRoots.classList.add('result-roots2')
+        resultRoots.classList.add('result-roots2');
         result.classList.add('result2');
         vertices.classList.add('vertices2');
+        roots.innerHTML = '';
 
     } else {
-        vertices.style.display = "none";
-        // result.classList.add('noRoots');
+        // vertices.style.display = "none";
         result.innerHTML = 'Não existem raízes reais.';
-        roots.innerHTML = '';
         resultRoots.classList.add('result-roots2')
         result.classList.add('result2');
+        vertices.innerHTML = `A coordenada do vértice da parábola é: <bolder>(${vx},${vy})</bolder`
+        roots.innerHTML = '';
     }
 });
 
