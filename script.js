@@ -63,7 +63,7 @@ function validateForm(){
     const valueC = document.getElementById( 'c' ).value
 
     if (valueA === '' || valueB === '' || valueC === ''){
-        window.alert("Digite os coeficientes A, B e C!")
+        window.alert("Digite todos coeficientes A, B e C!")
         return false
 }else{
     return true
