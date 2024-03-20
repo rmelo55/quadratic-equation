@@ -1,1 +1,0 @@
-# Equação Quadrática
