@@ -37,6 +37,7 @@ function Calc() {
             setVertices(`A coordenada do vértice da parábola é: (${vx},${vy})`);
             setRoots('');
         }
+        
     };
     
     return (
