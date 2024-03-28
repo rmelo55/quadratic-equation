@@ -23,7 +23,9 @@ function Calc() {
 
             setResult('Existem duas raízes reais e distintas.');
             setRoots(`x₁ = ${x1}, x₂ = ${x2}`);
-            setVertices(`O discriminante Δ é: ${delta} A coordenada do vértice da parábola é: (${vx},${vy})`);
+            setVertices(`O discriminante Δ é: ${delta} 
+                        A coordenada do vértice da parábola 
+                        é: (${vx},${vy})`);
 
         } else if (delta === 0) {
             const x = -b / (2 * a);
