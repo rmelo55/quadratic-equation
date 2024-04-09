@@ -12,7 +12,7 @@ function Calc() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        
+        // const brLine = '<br />'
         const delta = Math.pow(b, 2) - 4 * a * c;
         const vx = -b / (2 * a);
         const vy = -delta / (4 * a);
@@ -23,8 +23,8 @@ function Calc() {
 
             setResult('Existem duas raízes reais e distintas.');
             setRoots(`x₁ = ${x1}, x₂ = ${x2}`);
-            setVertices(`O discriminante Δ é: ${delta} 
-                        A coordenada do vértice da parábola 
+            setVertices(`O discriminante Δ é: ${delta},\n
+                        e a coordenada do vértice da parábola 
                         é: (${vx},${vy})`);
 
         } else if (delta === 0) {
@@ -32,11 +32,13 @@ function Calc() {
 
             setResult('Existe apenas uma raiz real.');
             setRoots(`x = ${x}`);
-            setVertices(`O discriminante Δ é: ${delta} <br/> A coordenada do vértice da parábola é: (${vx},${vy})`);
+            setVertices(`O discriminante Δ é: ${delta}, 
+                        e a coordenada do vértice da parábola é: (${vx},${vy})`);
 
         } else {
             setResult('Não existem raízes reais.');
-            setVertices(`A coordenada do vértice da parábola é: (${vx},${vy})`);
+            setVertices(`A coordenada do vértice da parábola é: 
+                        (${vx},${vy})`);
             setRoots('');
         }
         
