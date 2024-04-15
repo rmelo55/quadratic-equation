@@ -15,11 +15,11 @@ function Calc() {
         // const brLine = '<br />'
         const delta = Math.pow(b, 2) - 4 * a * c;
         const vx = -b / (2 * a);
-        const vy = -delta / (4 * a);
+        const vy = (-delta / (4 * a)).toFixed(2);
 
         if (delta > 0) {
-            const x1 = (-b + Math.sqrt(delta)) / (2 * a);
-            const x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            const x1 = ((-b + Math.sqrt(delta)) / (2 * a)).toFixed(2);
+            const x2 = ((-b - Math.sqrt(delta)) / (2 * a)).toFixed(2);
 
             setResult('Existem duas raízes reais e distintas.');
             setRoots(`x₁ = ${x1}, x₂ = ${x2}`);
