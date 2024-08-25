@@ -1,6 +1,7 @@
 .NavBar {
     width: 100vh;
-    height: 140px;
+    height: auto;
+    min-height: 140px;
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 20px;
@@ -12,6 +13,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
     margin: 0;
@@ -19,6 +21,7 @@ h1 {
 
 .menu {
     display: flex;
+    flex-direction: row;
     gap: 10px;
     margin-left: 10px;
 }
@@ -36,4 +39,23 @@ a:visited {
 a:hover {
     color: yellow;
     border: 10x solid yellow;
+}
+
+@media (max-width: 500px) {
+    .NavBar {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    h1 {
+        margin-bottom: 20px;
+        font-size: 20pt;
+    }
 }
