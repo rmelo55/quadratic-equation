@@ -11,11 +11,6 @@ body{
     padding: 0;
 }
 
-.main{
-    height: auto;
-    width: 100%;
-}
-
 form {
     width: 280px;
     height: auto;
