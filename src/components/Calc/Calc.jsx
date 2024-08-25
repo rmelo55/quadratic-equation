@@ -1,6 +1,5 @@
 import { isVisible } from '@testing-library/user-event/dist/utils';
 import React, { useState } from 'react';
-import './Calc.css'
 
 function Calc() {
     const [a, setA] = useState('');
@@ -49,7 +48,7 @@ function Calc() {
         <div className='main'>
             <form onSubmit={handleSubmit}>
 
-                <h1>Calcule as raízes <br/> e os vértices</h1>
+                <h2>Calcule as raízes <br/> e os vértices</h2>
 
                 <input type="number" id="a" value={a} onChange={(e) => setA(parseInt(e.target.value))} placeholder="Coeficiente a" />
 
