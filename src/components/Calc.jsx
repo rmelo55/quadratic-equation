@@ -45,7 +45,7 @@ function Calc() {
     };
     
     return (
-        <div className='container'>
+        <div className='main'>
             <form onSubmit={handleSubmit}>
 
                 <h1>Calcule as raízes <br/> e os vértices</h1>

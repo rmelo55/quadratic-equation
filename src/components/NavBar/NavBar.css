@@ -1,0 +1,11 @@
+.NavBar{
+    width: 100%;
+    background-color: chocolate;
+    height: 60px;
+    margin: 0;
+    margin-bottom: 20px;
+    
+}
+h1 .topbar {
+    color: brown;
+}

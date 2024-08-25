@@ -7,14 +7,17 @@ body{
     justify-content: center;
     align-items: center;
     align-content: center;
+    margin: 0;
+    padding: 0;
 }
 
-.container{
+.main{
     height: auto;
+    width: 100%;
 }
 
 form {
-    width: 300px;
+    width: 280px;
     height: auto;
     margin: auto;
     margin-bottom: 20px;
@@ -29,6 +32,7 @@ form {
 h1{
     color: #fff;
     text-shadow: 1px 2px 2px #000;
+    margin-top: 10px;
 }
 
 input[type=number]{
