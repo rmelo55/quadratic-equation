@@ -11,6 +11,11 @@ body{
     padding: 0;
 }
 
+.main {
+    border: 1px solid #000;
+    width: 500px;
+}
+
 form {
     width: 280px;
     height: auto;

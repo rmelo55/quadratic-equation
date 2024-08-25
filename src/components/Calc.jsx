@@ -1,5 +1,6 @@
 import { isVisible } from '@testing-library/user-event/dist/utils';
 import React, { useState } from 'react';
+import './Calc.css'
 
 function Calc() {
     const [a, setA] = useState('');
